@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lavender: #8B7CF6;
+  --color-blush: #F8C8DC;
+  --color-pastel-blue: #A7C7E7;
+  --color-warm-bg: #FFF5F8;
+  --color-card-bg: #FFFFFF;
+  --color-sos: #FF5A7A;
+  --color-primary-text: #3A3A3A;
+  --color-secondary-text: #7A7A7A;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-warm-bg);
+    color: var(--color-primary-text);
+    font-family: var(--font-sans);
+  }
+}
+
+@utility sky-gradient {
+  background: linear-gradient(180deg, #8B7CF6 0%, #A7C7E7 40%, #F8C8DC 100%);
+}
+
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@utility soft-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@utility card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

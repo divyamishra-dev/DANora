@@ -1,0 +1,5 @@
+{
+  "name": "DANora",
+  "description": "A modern, calming hostel management app focused on student safety and real-time updates.",
+  "requestFramePermissions": ["geolocation"]
+}
